@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+#from django.conf.urls import url
+import restaurants.views
 
 urlpatterns = [
+    path('',restaurants.views.home),
     path('admin/', admin.site.urls),
 ]
+# urlpatterns=[
+#     url(r'^$',restaurants.views.home)
+# ]
