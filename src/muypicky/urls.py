@@ -20,6 +20,8 @@ import restaurants.views
 
 urlpatterns = [
     path('',restaurants.views.home),
+    path('about/',restaurants.views.about),
+    path('contact/',restaurants.views.contact),
     path('admin/', admin.site.urls),
 ]
 # urlpatterns=[
