@@ -19,9 +19,9 @@ from django.urls import path
 import restaurants.views
 
 urlpatterns = [
-    path('',restaurants.views.home),
-    path('about/',restaurants.views.about),
-    path('contact/',restaurants.views.contact),
+    path('',restaurants.views.HomeView.as_view()),
+    path('about/',restaurants.views.AboutView.as_view()),
+    path('contact/',restaurants.views.ContactView.as_view()),
     path('admin/', admin.site.urls),
 ]
 # urlpatterns=[
